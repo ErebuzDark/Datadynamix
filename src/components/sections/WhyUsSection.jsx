@@ -1,22 +1,22 @@
-import { motion } from 'framer-motion';
-import { CheckCircleOutlined } from '@ant-design/icons';
-import { SectionTitle } from '../ui/SectionTitle';
+import { motion } from "framer-motion";
+import { CheckCircleOutlined } from "@ant-design/icons";
+import { SectionTitle } from "../ui/SectionTitle";
 
 const fadeUp = {
   initial: { opacity: 0, y: 20 },
   whileInView: { opacity: 1, y: 0 },
   viewport: { once: true },
-  transition: { duration: 0.6, ease: "easeOut" }
+  transition: { duration: 0.6, ease: "easeOut" },
 };
 
 const staggerContainer = {
   initial: {},
   whileInView: {
     transition: {
-      staggerChildren: 0.1
-    }
+      staggerChildren: 0.1,
+    },
   },
-  viewport: { once: true }
+  viewport: { once: true },
 };
 
 const WhyUsSection = () => {
@@ -26,19 +26,15 @@ const WhyUsSection = () => {
     "Growing in house technical and support team",
     "Custom built solutions aligned to real operational needs",
     "Secure, scalable, cloud ready architectures",
-    "Long term system support and maintenance"
+    "Long term system support and maintenance",
   ];
 
   return (
-    <section className="py-24 px-6 bg-white">
+    <section className="relative py-24 px-6 bg-white">
       <div className="max-w-6xl mx-auto">
-        <SectionTitle 
-          subtitle="WHY DATADYNAMIX"
-          title="Why Organizations Choose Datadynamix"
-          centered
-        />
-        
-        <motion.div 
+        <SectionTitle subtitle="WHY DATADYNAMIX" title="Why Organizations Choose Datadynamix" centered />
+
+        <motion.div
           variants={staggerContainer}
           initial="initial"
           whileInView="whileInView"
@@ -46,16 +42,20 @@ const WhyUsSection = () => {
           className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto"
         >
           {reasons.map((reason, index) => (
-            <motion.div
-              key={index}
-              variants={fadeUp}
-              className="flex items-start gap-4 p-6 bg-muted rounded-xl"
-            >
+            <motion.div key={index} variants={fadeUp} className="flex items-start gap-4 p-6 bg-muted rounded-xl">
               <CheckCircleOutlined className="text-primary text-xl mt-1 flex-shrink-0" />
               <span className="text-foreground leading-relaxed">{reason}</span>
             </motion.div>
           ))}
         </motion.div>
+      </div>
+      <div class="custom-shape-divider-bottom-1765855482">
+        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+          <path
+            d="M600,112.77C268.63,112.77,0,65.52,0,7.23V120H1200V7.23C1200,65.52,931.37,112.77,600,112.77Z"
+            class="shape-fill"
+          ></path>
+        </svg>
       </div>
     </section>
   );

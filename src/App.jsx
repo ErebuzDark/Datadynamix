@@ -1,25 +1,18 @@
-import MainLayout from './components/layouts/MainLayout';
-import HeroSection from './components/sections/HeroSection';
-import AboutSection from './components/sections/AboutSection';
-import ServicesSection from './components/sections/ServicesSection';
-import ProcessSection from './components/sections/ProcessSection';
-import IndustriesSection from './components/sections/IndustriesSection';
-import WhyUsSection from './components/sections/WhyUsSection';
-import TechnologySection from './components/sections/TechnologySection';
-import CTASection from './components/sections/CTASection';
+// Pagees from route nga niii!!!
+import { Homepage } from "./routes/route";
+import MainLayout from "@components/layouts/MainLayout";
+
+import { Routes, Route } from "react-router-dom";
+
+const routes = [{ name: <Homepage />, path: "/" }];
 
 function App() {
   return (
-    <MainLayout>
-      <HeroSection />
-      <AboutSection />
-      <ServicesSection />
-      <ProcessSection />
-      <IndustriesSection />
-      <WhyUsSection />
-      <TechnologySection />
-      <CTASection />
-    </MainLayout>
+    <Routes>
+      {routes.map((route, index) => (
+        <Route key={index} path={route.path} element={<MainLayout>{route.name}</MainLayout>} />
+      ))}
+    </Routes>
   );
 }
 

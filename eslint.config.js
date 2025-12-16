@@ -23,9 +23,8 @@ export default defineConfig([
       "no-unused-vars": [
         "warn",
         {
+          varsIgnorePattern: "^[A-Z_].*",
           argsIgnorePattern: "^_",
-          varsIgnorePattern: "^[A-Z_]/u",
-          caughtErrorsIgnorePattern: "^_",
         },
       ],
     },

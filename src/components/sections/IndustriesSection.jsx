@@ -29,7 +29,7 @@ const IndustriesSection = () => {
   ];
 
   return (
-    <section id="industries" className="py-24 px-6 bg-gradient-to-br from-primary/5 to-white">
+    <section id="industries" className="py-24 px-6 to-white">
       <div className="max-w-6xl mx-auto">
         <SectionTitle 
           subtitle="INDUSTRIES WE SERVE"

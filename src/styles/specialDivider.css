@@ -1,0 +1,90 @@
+/* --------------- About Section ---------------- */
+
+/* fefefe */
+.custom-shape-divider-bottom-1765851680 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.custom-shape-divider-bottom-1765851680 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 81px;
+}
+
+.custom-shape-divider-bottom-1765851680 .shape-fill {
+  fill: oklch(99.703% 0.00011 271.152);
+}
+/* --------------- About Section ---------------- */
+
+/* --------------- Process Section --------------- */
+.custom-shape-divider-bottom-1765852394 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.custom-shape-divider-bottom-1765852394 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 81px;
+}
+
+.custom-shape-divider-bottom-1765852394 .shape-fill {
+  fill: #ffffff;
+}
+/* --------------- Process Section --------------- */
+
+/* --------------- Why Us Section --------------- */
+.custom-shape-divider-bottom-1765855482 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.custom-shape-divider-bottom-1765855482 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 183px;
+}
+
+.custom-shape-divider-bottom-1765855482 .shape-fill {
+  fill: oklch(0.62 0.23 260);
+}
+/* --------------- Why Us Section --------------- */
+
+/* --------------- CTA Section --------------- */
+.custom-shape-divider-top-1765855745 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-top-1765855745 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 76px;
+}
+
+.custom-shape-divider-top-1765855745 .shape-fill {
+  fill: oklch(0.62 0.23 260);
+}
+/* --------------- CTA Section --------------- */

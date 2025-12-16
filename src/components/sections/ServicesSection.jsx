@@ -43,7 +43,7 @@ const ServicesSection = () => {
   ];
 
   return (
-    <section id="solutions" className="py-24 px-6 bg-muted">
+    <section id="solutions" className="py-24 px-6 bg-white">
       <div className="max-w-7xl mx-auto">
         <SectionTitle 
           subtitle="WHAT WE DO"
