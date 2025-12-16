@@ -25,7 +25,7 @@ const HeroSection = () => (
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
         >
-          <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 leading-tight drop-shadow-lg">
+          <h1 className="text-3xl sm:text-5xl md:text-7xl font-bold text-white my-6 leading-tight drop-shadow-lg">
             <span className="text-primary">Xtraordinary</span> Solutions<br />
             for Real World Operations
           </h1>

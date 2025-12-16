@@ -93,7 +93,7 @@ const AboutSection = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.5, duration: 0.6 }}
-            className="grid grid-cols-3 gap-4 mt-12"
+            className="grid grid-cols-1 sm:grid-cols-3 gap-4 mt-12"
           >
             <div className="bg-white/90 backdrop-blur-sm p-6 rounded-xl text-center shadow-lg hover:shadow-xl transition-shadow">
               <div className="text-4xl font-bold text-primary mb-2">15+</div>
