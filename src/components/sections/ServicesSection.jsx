@@ -3,6 +3,12 @@ import { CloudOutlined, TeamOutlined, SafetyOutlined, CheckCircleOutlined, Rocke
 import { SectionTitle } from '../ui/SectionTitle';
 import { ServiceCard } from '../ui/ServiceCard';
 
+import ecommerce_enablement from "@assets/images/bg_ecommerce_enablement.jpg";
+import school_management from "@assets/images/bg_school_management.webp";
+import secure_document from "@assets/images/bg_secure_doc_verification.avif";
+import medical_clinic from "@assets/images/bg_medical_clinic.webp";
+import web_mobile from "@assets/images/bg_web_mobile.jpg";
+
 const staggerContainer = {
   initial: {},
   whileInView: {
@@ -16,29 +22,29 @@ const staggerContainer = {
 const ServicesSection = () => {
   const services = [
     {
-      icon: <CloudOutlined />,
       title: "Ecommerce Enablement and Business Systems",
-      description: "Cloud based platforms that support inventory management, order processing, customer management, and integrated payment workflows for wholesale and retail operations."
+      description: "Cloud based platforms that support inventory management, order processing, customer management, and integrated payment workflows for wholesale and retail operations.",
+      image: ecommerce_enablement
     },
     {
-      icon: <TeamOutlined />,
       title: "School Management Systems",
-      description: "Comprehensive digital systems for educational institutions, including enrollment, student records, billing, reporting, and administrative workflows."
+      description: "Comprehensive digital systems for educational institutions, including enrollment, student records, billing, reporting, and administrative workflows.",
+      image: school_management
     },
     {
-      icon: <SafetyOutlined />,
       title: "Secure Document Verification Systems",
-      description: "Online platforms for issuing and verifying documents with secure records, audit trails, and validation tools for institutional and public sector use."
+      description: "Online platforms for issuing and verifying documents with secure records, audit trails, and validation tools for institutional and public sector use.",
+      image: secure_document
     },
     {
-      icon: <CheckCircleOutlined />,
       title: "Medical and Clinic Management Systems",
-      description: "Custom software solutions for healthcare providers, including patient records, appointment scheduling, billing support, and operational management."
+      description: "Custom software solutions for healthcare providers, including patient records, appointment scheduling, billing support, and operational management.",
+      image: medical_clinic
     },
     {
-      icon: <RocketOutlined />,
       title: "Custom Web and Mobile Application Development",
-      description: "Tailored web and mobile applications designed around your business processes, built for scalability, security, and long term maintainability."
+      description: "Tailored web and mobile applications designed around your business processes, built for scalability, security, and long term maintainability.",
+      image: web_mobile
     }
   ];
 
@@ -59,7 +65,7 @@ const ServicesSection = () => {
           className="grid md:grid-cols-2 lg:grid-cols-3 gap-8"
         >
           {services.map((service, index) => (
-            <ServiceCard key={index} {...service} />
+            <ServiceCard  rd key={index} {...service} />
           ))}
         </motion.div>
       </div>

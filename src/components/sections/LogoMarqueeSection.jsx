@@ -1,30 +1,27 @@
-import { motion } from 'framer-motion';
-import { SectionTitle } from '../ui/SectionTitle';
+import { motion } from "framer-motion";
+// import { SectionTitle } from "../ui/SectionTitle";
+
+import ccbi from "@assets/logos/ccbi.png";
+import cellboy from "@assets/logos/cellboy.png";
+import md_wholesale from "@assets/logos/md_wholesale.png";
+import megawide from "@assets/logos/megawide.png";
 
 const LogoMarqueeSection = () => {
   // Sample client/partner logos (you can replace with actual logos)
   const logos = [
-    { name: 'Company A', text: 'COMPANY A' },
-    { name: 'Company B', text: 'COMPANY B' },
-    { name: 'Company C', text: 'COMPANY C' },
-    { name: 'Company D', text: 'COMPANY D' },
-    { name: 'Company E', text: 'COMPANY E' },
-    { name: 'Company F', text: 'COMPANY F' },
-    { name: 'Company G', text: 'COMPANY G' },
-    { name: 'Company H', text: 'COMPANY H' }
+    { name: "CCBI", image: ccbi },
+    { name: "CellBoy", image: cellboy },
+    { name: "MD Wholesale", image: md_wholesale },
+    { name: "Megawide", image: megawide },
   ];
 
   // Duplicate logos for seamless infinite scroll
   const duplicatedLogos = [...logos, ...logos];
 
   return (
-    <section className="py-24 px-6 bg-white overflow-hidden">
+    <section className="relative px-6 bg-white overflow-hidden">
       <div className="max-w-7xl mx-auto">
-        <SectionTitle 
-          subtitle="TRUSTED BY ORGANIZATIONS"
-          title="Proud to Serve Leading Organizations"
-          centered
-        />
+        {/* <SectionTitle subtitle="TRUSTED BY ORGANIZATIONS" title="Proud to Serve Leading Organizations" centered /> */}
 
         <div className="relative mt-16">
           {/* Gradient overlays for fade effect */}
@@ -36,7 +33,7 @@ const LogoMarqueeSection = () => {
             <motion.div
               className="flex gap-16 items-center"
               animate={{
-                x: [0, -50 + '%'],
+                x: [0, -50 + "%"],
               }}
               transition={{
                 x: {
@@ -50,12 +47,9 @@ const LogoMarqueeSection = () => {
               {duplicatedLogos.map((logo, index) => (
                 <div
                   key={index}
-                  className="flex items-center justify-center flex-shrink-0 w-48 h-24 bg-muted rounded-lg border border-border hover:border-primary transition-all duration-300 hover:shadow-lg group"
+                  className="flex items-center justify-center flex-shrink-0 w-48 h-24 rounded-lg hover:border-primary transition-all duration-300"
                 >
-                  {/* Replace this with actual logo images */}
-                  <span className="text-2xl font-bold text-muted-foreground group-hover:text-primary transition-colors">
-                    {logo.text}
-                  </span>
+                  <img src={logo.image} alt="" />
                 </div>
               ))}
             </motion.div>
@@ -66,7 +60,7 @@ const LogoMarqueeSection = () => {
             <motion.div
               className="flex gap-16 items-center"
               animate={{
-                x: [-50 + '%', 0],
+                x: [-50 + "%", 0],
               }}
               transition={{
                 x: {
@@ -80,12 +74,9 @@ const LogoMarqueeSection = () => {
               {duplicatedLogos.map((logo, index) => (
                 <div
                   key={index}
-                  className="flex items-center justify-center flex-shrink-0 w-48 h-24 bg-muted rounded-lg border border-border hover:border-primary transition-all duration-300 hover:shadow-lg group"
+                  className="flex items-center justify-center flex-shrink-0 w-48 h-24 rounded-lg hover:border-primary transition-all duration-300"
                 >
-                  {/* Replace this with actual logo images */}
-                  <span className="text-2xl font-bold text-muted-foreground group-hover:text-primary transition-colors">
-                    {logo.text}
-                  </span>
+                  <img src={logo.image} alt="" />
                 </div>
               ))}
             </motion.div>
