@@ -5,6 +5,7 @@ import ccbi from "@assets/logos/ccbi.png";
 import cellboy from "@assets/logos/cellboy.png";
 import md_wholesale from "@assets/logos/md_wholesale.png";
 import megawide from "@assets/logos/megawide.png";
+import hansa from "@assets/logos/hansa.png";
 
 const LogoMarqueeSection = () => {
   // Sample client/partner logos (you can replace with actual logos)
@@ -13,6 +14,7 @@ const LogoMarqueeSection = () => {
     { name: "CellBoy", image: cellboy },
     { name: "MD Wholesale", image: md_wholesale },
     { name: "Megawide", image: megawide },
+    { name: "Hansa Creation USA", image: hansa },
   ];
 
   // Duplicate logos for seamless infinite scroll
