@@ -6,6 +6,7 @@ import cellboy from "@assets/logos/cellboy.png";
 import md_wholesale from "@assets/logos/md_wholesale.png";
 import megawide from "@assets/logos/megawide.png";
 import hansa from "@assets/logos/hansa.png";
+import konsultaresulta from "@assets/logos/konsultaresulta.png"
 
 const LogoMarqueeSection = () => {
   // Sample client/partner logos (you can replace with actual logos)
@@ -15,6 +16,7 @@ const LogoMarqueeSection = () => {
     { name: "MD Wholesale", image: md_wholesale },
     { name: "Megawide", image: megawide },
     { name: "Hansa Creation USA", image: hansa },
+    { name: "Konsulta @ Resulta", image: konsultaresulta },
   ];
 
   // Duplicate logos for seamless infinite scroll
@@ -49,6 +51,7 @@ const LogoMarqueeSection = () => {
               {duplicatedLogos.map((logo, index) => (
                 <div
                   key={index}
+                  title={logo.name}
                   className="flex items-center justify-center flex-shrink-0 w-48 h-24 rounded-lg hover:border-primary transition-all duration-300"
                 >
                   <img src={logo.image} alt="" />
@@ -76,6 +79,7 @@ const LogoMarqueeSection = () => {
               {duplicatedLogos.map((logo, index) => (
                 <div
                   key={index}
+                  title={logo.name}
                   className="flex items-center justify-center flex-shrink-0 w-48 h-24 rounded-lg hover:border-primary transition-all duration-300"
                 >
                   <img src={logo.image} alt="" />
