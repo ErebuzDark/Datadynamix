@@ -25,7 +25,7 @@ const HeroSection = () => (
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
         >
-          <h1 className="text-3xl sm:text-5xl md:text-7xl font-bold text-white my-6 leading-tight drop-shadow-lg">
+          <h1 className="text-4xl sm:text-5xl md:text-7xl font-bold text-white my-6 leading-tight drop-shadow-lg">
             <span className="text-primary">Xtraordinary</span> Solutions<br />
             for Real World Operations
           </h1>
@@ -35,7 +35,7 @@ const HeroSection = () => (
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
-          className="text-xl md:text-2xl text-white/90 mb-10 leading-relaxed drop-shadow-md"
+          className="text-base sm:text-lg md:text-2xl text-white/90 mb-10 leading-relaxed drop-shadow-md"
         >
           B2B cloud based systems and custom software for wholesale and retail businesses, 
           schools, healthcare providers, government agencies, and professional organizations 

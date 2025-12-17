@@ -17,7 +17,7 @@ export const SectionTitle = ({ title, subtitle, centered = false, dark = false }
         {subtitle}
       </p>
     )}
-    <h2 className={`text-4xl md:text-5xl font-bold ${dark ? "text-white" : "text-primary-dark"}`}>
+    <h2 className={`text-xl sm:text-2xl md:text-3xl lg:text-5xl font-bold ${dark ? "text-white" : "text-primary-dark"}`}>
       {title}
     </h2>
   </motion.div>

@@ -32,9 +32,9 @@ const AboutSection = () => {
         >
           {/* Opening Statement - Featured */}
           <div className="bg-white/90 backdrop-blur-sm rounded-2xl p-10 shadow-xl">
-            <p className="text-2xl md:text-3xl text-foreground leading-relaxed text-center font-light">
+            <p className="text-lg sm:text-xl md:text-3xl text-foreground leading-relaxed text-center font-light">
               Datadynamix Technologies LLC brings over{" "}
-              <span className="font-bold text-primary text-4xl">15 years</span>{" "}
+              <span className="font-bold text-primary">15 years</span>{" "}
               of experience in software development and technology consulting.
             </p>
           </div>

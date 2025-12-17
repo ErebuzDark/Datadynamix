@@ -11,14 +11,14 @@ const fadeUp = {
 
 const CTASection = () => (
   <section id="contact" className="relative py-24 px-6 bg-white">
-    <div class="custom-shape-divider-top-1765855745">
+    {/* <div class="custom-shape-divider-top-1765855745">
       <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
         <path
           d="M600,112.77C268.63,112.77,0,65.52,0,7.23V120H1200V7.23C1200,65.52,931.37,112.77,600,112.77Z"
           class="shape-fill"
         ></path>
       </svg>
-    </div>
+    </div> */}
     <div className="max-w-4xl mx-auto text-center">
       <motion.div {...fadeUp}>
         <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
